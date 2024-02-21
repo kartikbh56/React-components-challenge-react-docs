@@ -16,7 +16,8 @@ function Profile({ person, size }) {
           {person.profession}
         </li>
         <li>
-          <b>Awards: {getAwardsNum.apply(person)} </b>({person.awards})
+          <b>Awards: {getAwardsNum.apply(person)} </b>(
+          {person.awards.join(", ")})
         </li>
         <li>
           <b>Discovered: </b>
